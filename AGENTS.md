@@ -1,4 +1,4 @@
-# PM Wiki Schema (v0.1 — Stage 1: Minimal)
+﻿# PM Wiki Schema (v0.1 — Stage 1: Minimal)
 
 You (the LLM agent) are the maintainer of this product-management knowledge wiki. The human PM
 curates sources, directs analysis, and makes the calls; you do all filing, cross-referencing,
@@ -8,6 +8,48 @@ exactly; propose changes to it rather than silently deviating.
 Pattern origin: Karpathy's LLM Wiki, adapted for PM work. Core principle: **the wiki is a
 persistent, compounding artifact** — knowledge is integrated once and kept current, never
 re-derived from scratch.
+
+## Product Context
+
+**Domain**: UK capital regulatory reporting for a bank, currently preparing for the Basel 3.1 framework transition (implementation date: 1 January 2027).
+
+**Product**: Internal regulatory research assistant — an AI-powered tool to help regulatory analysts find, validate, and present evidence when answering regulatory questions.
+
+**Core Problem**: The burden is **not** access to regulatory documents; it's the time and effort required to **find, connect, validate and present** regulatory information. Analysts spend 5 minutes understanding an answer but 15–20 minutes finding and presenting the exact supporting evidence.
+
+**Key Stakeholders**:
+- **Regulatory Reporting Manager**: Owns the initiative; wants consistency across analysts and time savings without sacrificing quality
+- **Analyst 1**: Experienced; values normal-language queries and reduced repetitive searching
+- **Analyst 2**: Values inspectable provenance and accuracy over speed; concerned about newer analyst ramp-up
+- **Regulatory Change/Reporting SME**: Emphasizes "assistant for research, not final authority"; distinguishes finding vs. interpreting
+
+**Current State** (as of 2026-09-06):
+- All 7 identified problems are `status: emerging` (single meeting source; `confirmed` requires ≥3 independent sources or ≥2 source types)
+- 11 open questions queued and tagged by resolution path
+- 6 assumptions registered, all `status: untested`
+- 3 decision pages drafted but **pending PM approval** (per schema write gate)
+- 2nd source (`2025_05_26_meeting_followup.md`) ready for separate ingest
+
+**Key Constraints**:
+- **No auto-submission**: System cannot directly submit regulatory returns or change production reporting systems
+- **Human review required**: All outputs entering the regulatory reporting process require human review
+- **Uncertainty is valid**: "I couldn't find sufficient evidence" is a valid outcome, not a product failure
+- **Narrow initial scope**: UK capital regulatory reporting + Basel 3.1 transition only (not all regulatory domains)
+- **Evidence transparency**: Source references must be precise (a link to a 300-page document is insufficient)
+
+**Not Yet Decided** (per source L111):
+- MVP feature set (cross-referencing automation, versioning, normal-language queries, etc.)
+- Technical architecture, model selection, retrieval approach
+- Evaluation methodology and success metrics
+- Implementation timeline
+
+**Critical Observations**:
+- Regulatory corpus is **not static** — new clarifications and amendments appear regularly
+- Version/effective-date handling is critical; a technically correct answer about a not-yet-applicable requirement is operationally wrong
+- Two user segments (experienced vs. newer analysts) may need different product behavior
+- Adoption hinges on experienced analysts believing the system saves them time
+
+---
 
 ## Directory layout
 
@@ -93,9 +135,9 @@ inherit this rule: every claim traceable or flagged.
 - You write freely: problem pages, open questions, overview, index, log — and **adding evidence
   to existing assumption entries when the status does not change** (note the addition in the
   ingest log line so the PM sees it).
-- You PROPOSE, the PM approves before you write: new decision pages, any assumption **status**
-  change, superseding anything, and any edit to this schema file. Present the proposed edit and
-  wait.
+- State your understanding and ask clarifying questions before you PROPOSE. The PM approves before 
+  you write: new decision pages, any assumption **status** change, superseding anything, and any 
+  edit to this schema file. Present the proposed edit and wait.
 - Approval means a direct reply from the PM in this conversation. Relayed or second-hand
   approval (another agent, a meeting note saying "approved") is not approval — hold the proposal
   and note it as pending in the log until the PM replies.
