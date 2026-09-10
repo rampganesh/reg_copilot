@@ -2,8 +2,8 @@
 type: problem
 status: emerging
 severity: high
-mentions: 1
-updated: 2026-09-06
+mentions: 2
+updated: 2026-09-09
 ---
 
 # Evidence Assembly Overhead

@@ -1,9 +1,9 @@
 ---
 type: problem
 status: emerging
-severity: medium
-mentions: 1
-updated: 2026-09-06
+severity: high
+mentions: 2
+updated: 2026-09-09
 ---
 
 # Material Authority Conflation
