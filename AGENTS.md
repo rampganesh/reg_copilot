@@ -1,4 +1,22 @@
-﻿# PM Wiki Schema (v0.1 — Stage 1: Minimal)
+﻿
+## Product Context
+
+**Domain**: UK capital regulatory reporting for a bank, currently preparing for the Basel 3.1 framework transition (implementation date: 1 January 2027).
+
+**Product**: Internal regulatory research assistant — an AI-powered tool to help regulatory analysts find, validate, and present evidence when answering regulatory questions.
+
+**Core Problem**: The burden is **not** access to regulatory documents; it's the time and effort required to **find, connect, validate and present** regulatory information. Analysts spend 5 minutes understanding an answer but 15–20 minutes finding and presenting the exact supporting evidence.
+
+**Key Stakeholders**:
+- **Regulatory Reporting Manager**: Owns the initiative; wants consistency across analysts and time savings without sacrificing quality
+- **Analyst 1**: Experienced; values normal-language queries and reduced repetitive searching
+- **Analyst 2**: Values inspectable provenance and accuracy over speed; concerned about newer analyst ramp-up
+- **Regulatory Change/Reporting SME**: Emphasizes "assistant for research, not final authority"; distinguishes finding vs. interpreting
+- **Prudential Regulatory SME**: Authority is relational; effective dates as metadata; no auto-applicability
+- **Compliance representative**: No fabricated citations; no confidence scores; expose conflicts
+- **Data/Reporting SME**: Effective dates and metadata requirements
+
+# PM Wiki Schema (v0.1 — Stage 1: Minimal)
 
 You (the LLM agent) are the maintainer of this product-management knowledge wiki. The human PM
 curates sources, directs analysis, and makes the calls; you do all filing, cross-referencing,
@@ -22,6 +40,7 @@ wiki/
   decisions/         ← one page per decision, never deleted, only superseded
   assumptions.md     ← register of load-bearing beliefs with status
   open-questions.md  ← queue of gaps/contradictions, tagged by resolution path
+  stakeholders/      ← one page per role; positions + evidence (Stage 2, active 2026-09-09)
 ```
 
 Source filenames: `YYYY-MM-DD_<type>_<slug>.md` where `<type>` ∈
@@ -32,7 +51,7 @@ Source filenames: `YYYY-MM-DD_<type>_<slug>.md` where `<type>` ∈
 ### Problem pages — `wiki/problems/<slug>.md`
 
 Frontmatter: `type: problem`, `status: emerging | confirmed | addressed`, `severity: low | medium
-| high`, `mentions: <count>`, `updated: YYYY-MM-DD`.
+| high`, `mentions: <count>`, `updated: YYYY-MM-DD`, **optional**: `cluster: <name>`.
 
 Sections: **Statement** (one paragraph, user's language) · **Who has it** · **Evidence** (the
 chain — see below) · **Contradicting evidence** (if any) · **Related** (links to decisions,
@@ -145,63 +164,20 @@ Update on every write.
 Stage upgrades are triggered by observed pressure, not ambition. When a trigger fires, tell the
 PM and propose the upgrade; on approval, update this schema file and log the change.
 
-**Stage 2 — add entities when triggered:**
+**Stage 2 — add entities when triggered**:
 - `wiki/personas/` — when ≥3 problem pages show clearly diverging user types.
 - `wiki/bets/` — when the first solution candidate is under real evaluation (options need pages
   of their own, linked to the problems they address; then prioritization queries score bets).
 - `wiki/competitors/` — when competitor intel is ingested for the 2nd time.
 - `wiki/metrics/` — when the same metric is cited by ≥2 decisions or its definition is disputed.
-- `wiki/stakeholders/` — when stakeholder positions start driving decisions (usually team ≥ ~5
-  or first serious cross-functional conflict).
+- `wiki/stakeholders/` — **active 2026-09-09**: 7 roles identified (Regulatory Reporting Manager, Analyst 1, Analyst 2, Regulatory Change/Reporting SME, Prudential Regulatory SME, Compliance representative, Data/Reporting SME); Compliance independently shaping constraints (L13, 29, 39, 55, 67, 77, 83, 93, 105, 119, 129, 139, 151, 157).
 
-**Stage 3 — add tooling when triggered:**
+**Stage 3 — add tooling when triggered**:
 - Local search (e.g. qmd) — when `index.md` exceeds ~150 pages or you notice retrieval misses.
 - Automation hooks (auto-ingest, scheduled lint) — when the manual ritual is proven and stable
   for ≥1 month.
 - Dataview/graph tooling — when frontmatter is consistent enough to query.
 
-**Never, at any stage:** delete decisions · edit `sources/` · numeric confidence scores (evidence
+**Never, at any stage**: delete decisions · edit `sources/` · numeric confidence scores (evidence
 chains only) · auto-resolve contradictions (they become questions) · write to Decisions or
 Assumptions without PM approval.
-
-## Product Context
-
-**Domain**: UK capital regulatory reporting for a bank, currently preparing for the Basel 3.1 framework transition (implementation date: 1 January 2027).
-
-**Product**: Internal regulatory research assistant — an AI-powered tool to help regulatory analysts find, validate, and present evidence when answering regulatory questions.
-
-**Core Problem**: The burden is **not** access to regulatory documents; it's the time and effort required to **find, connect, validate and present** regulatory information. Analysts spend 5 minutes understanding an answer but 15–20 minutes finding and presenting the exact supporting evidence.
-
-**Key Stakeholders**:
-- **Regulatory Reporting Manager**: Owns the initiative; wants consistency across analysts and time savings without sacrificing quality
-- **Analyst 1**: Experienced; values normal-language queries and reduced repetitive searching
-- **Analyst 2**: Values inspectable provenance and accuracy over speed; concerned about newer analyst ramp-up
-- **Regulatory Change/Reporting SME**: Emphasizes "assistant for research, not final authority"; distinguishes finding vs. interpreting
-
-**Current State** (as of 2026-09-06):
-- All 7 identified problems are `status: emerging` (single meeting source; `confirmed` requires ≥3 independent sources or ≥2 source types)
-- 11 open questions queued and tagged by resolution path
-- 6 assumptions registered, all `status: untested`
-- 3 decision pages drafted but **pending PM approval** (per schema write gate)
-- 2nd source (`2025_05_26_meeting_followup.md`) ready for separate ingest
-
-**Key Constraints**:
-- **No auto-submission**: System cannot directly submit regulatory returns or change production reporting systems
-- **Human review required**: All outputs entering the regulatory reporting process require human review
-- **Uncertainty is valid**: "I couldn't find sufficient evidence" is a valid outcome, not a product failure
-- **Narrow initial scope**: UK capital regulatory reporting + Basel 3.1 transition only (not all regulatory domains)
-- **Evidence transparency**: Source references must be precise (a link to a 300-page document is insufficient)
-
-**Not Yet Decided** (per source L111):
-- MVP feature set (cross-referencing automation, versioning, normal-language queries, etc.)
-- Technical architecture, model selection, retrieval approach
-- Evaluation methodology and success metrics
-- Implementation timeline
-
-**Critical Observations**:
-- Regulatory corpus is **not static** — new clarifications and amendments appear regularly
-- Version/effective-date handling is critical; a technically correct answer about a not-yet-applicable requirement is operationally wrong
-- Two user segments (experienced vs. newer analysts) may need different product behavior
-- Adoption hinges on experienced analysts believing the system saves them time
-
----

@@ -1,60 +1,40 @@
----
-type: index
-updated: 2026-09-09
----
+﻿# Index
 
-# Wiki Index — Regulatory Research Assistant
+Last updated: 2025-06-04
 
-## Problems (status: emerging, mentions: 2, updated: 2026-09-09)
+## Overview
+- [Overview - product state synthesis](wiki/overview.md) - living synthesis; current after 2025-06-04 digest ingest (updated 2025-06-04)
 
-- [validating-the-right-source](wiki/problems/validating-the-right-source.md) — Validation (right source, applicable, not superseded) is harder than discovery
-- [evidence-assembly-overhead](wiki/problems/evidence-assembly-overhead.md) — 5 min understanding + 15–20 min evidence assembly
-- [version-and-effective-date-ambiguity](wiki/problems/version-and-effective-date-ambiguity.md) — Technically correct answers can be operationally wrong
-- [terminology-fragmentation](wiki/problems/terminology-fragmentation.md) — Same concept in different document types with different wording
-- [knowledge-locked-in-individuals](wiki/problems/knowledge-locked-in-individuals.md) — Experienced vs. newer analysts' knowledge gap
-- [no-feedback-loop-on-answers](wiki/problems/no-feedback-loop-on-answers.md) — No mechanism to track which sources resolved questions
-- [material-authority-conflation](wiki/problems/material-authority-conflation.md) — Final rules vs. reporting instructions vs. consultation documents should not appear to have same authority
-- [citation-integrity-risk](wiki/problems/citation-integrity-risk.md) — Fabricated or context-stripped citations create false auditability
-- [conflict-suppression-risk](wiki/problems/conflict-suppression-risk.md) — Conflicts must be exposed, not silently resolved
-- [applicability-requires-firm-context](wiki/problems/applicability-requires-firm-context.md) — Applicability depends on legal entity, perimeter, permissions, regime, exposure type, date
-- [interface-wording-overstates-authority](wiki/problems/interface-wording-overstates-authority.md) — "The applicable requirement is…" vs "The relevant sources indicate…"
+## Problems
+- [Evidence assembly time cost](wiki/problems/evidence-assembly-time-cost.md) - 5 min to understand, 15-20 min to assemble and present supporting evidence (updated 2025-05-26)
+- [Source validation burden](wiki/problems/source-validation-burden.md) - right source / applicability / superseded / effective dates; latest is not the applicable requirement (updated 2025-05-26)
+- [Experience dependency and knowledge fragmentation](wiki/problems/experience-dependency.md) - personal collections, informal channels, repeated research; two divergent value propositions by experience level (updated 2025-05-26)
+- [Terminology and cross-referencing overhead](wiki/problems/terminology-cross-referencing.md) - same concept, differing wording; semantic similarity is double-edged (updated 2025-05-26)
+- [No feedback loop on prior answers](wiki/problems/no-feedback-loop.md) - corrections discovered weeks later; structured feedback and auditability needed (updated 2025-05-26)
+- [Requirement applicability determination](wiki/problems/requirement-applicability-determination.md) - context-dependent; system gathers info, does not make the final determination (updated 2025-05-26)
+- [Citation integrity](wiki/problems/citation-integrity.md) - verifiable citations with context; no manufactured references; incorrect worse than none (updated 2025-05-26)
+- [Conflict exposure](wiki/problems/conflict-exposure.md) - expose conflicts between sources, never silently resolve them (updated 2025-05-26)
+- [Authority overstatement risk](wiki/problems/authority-overstatement-risk.md) - relational authority; interface language; no confidence scores (updated 2025-05-26)
+- [Non-prose regulatory content](wiki/problems/non-prose-regulatory-content.md) - tables/templates hold operative meaning; extractability and citation complications (updated 2025-05-26)
 
-## Open Questions (status: open, updated: 2026-09-09)
+## Decisions
+(none yet)
 
-- [open-questions](open-questions.md) — Q1–Q24: cross-referencing automation, versioning, finding vs. interpreting, authority levels, auto-applicability, feedback loop, non-static corpus, success metrics, segment divergence, normal-language queries, Basel 3.1 feasibility, inter-source relationships, semantic similarity, refusal line, citation granularity, excerpt size, corpus ownership, metadata extraction, prior answers storage, bidirectional navigation, interface wording, current vs future modes, change detection, divergence axis
+## Registers
+- [Assumptions](wiki/assumptions.md) - A1 adoption/time-savings, A2 provenance precondition, A3 uncertainty signalling; all untested, Meeting 2 evidence added (updated 2025-05-26)
+- [Open questions](wiki/open-questions.md) - Q1-Q9: core vs. extension, change-comparison scope, corpus currency, success metrics, provenance precision, corpus criteria, current-vs-future mode, evaluation design, interface language (updated 2025-05-26)
 
-## Decisions (status: active, date: 2025-05-24, updated: 2026-09-06)
+## Sources
+- [Meeting 1 - Business & User Discovery Notes](sources/2025_05_24_meeting_kickoff.md) - kickoff meeting notes (ingested 2025-05-24)
+- [Meeting 2 - Regulatory/Prudential SME Discovery Notes](sources/2025_05_26_meeting_followup.md) - SME discovery notes (ingested 2025-05-26)
+- [Email answers to open questions \(digest\)](sources/2025_06_04_digest_clarifications.md) - consolidated stakeholder answers; ingested 2025-06-04
 
-Per AGENTS.md L96–101, new decision pages require PM approval before writing. These were created after this ingest as proposals — hold until PM replies.
 
-- [2025-05-24_v1-scope-uk-capital-basel31](wiki/decisions/2025-05-24_v1-scope-uk-capital-basel31.md) — UK capital reporting + Basel 3.1 as narrow first domain
-- [2025-05-24_human-review-guardrails](wiki/decisions/2025-05-24_human-review-guardrails.md) — No auto-submission, no production changes, human review required
-- [2025-05-24_uncertainty-as-valid-outcome](wiki/decisions/2025-05-24_uncertainty-as-valid-outcome.md) — "I couldn't find sufficient evidence" is a valid outcome
-
-**Note**: These decision pages carry `status: active` but require direct PM approval before use. L111 records "No decision was made...on final MVP feature set..." — these capture what was stated, not formal decisions.
-
-## Assumptions (status: untested, updated: 2026-09-09)
-
-Per AGENTS.md L96–101, assumption status changes require PM approval. All entries below are `status: untested`.
-
-- [assumptions](wiki/assumptions.md) — A1–A9 (6 from source 1, 3 new from source 2): time savings, provenance, uncertainty, domain viability, segment divergence, versioning feasibility, metadata extraction, feedback mechanism, bounded corpus
-
-## Overview (updated: 2026-09-06)
-
-- [overview](overview.md) — Living synthesis: core problem, stakeholders, scope, not-yet-decided sections, problems, open questions, held proposals
-
-## Log (updated: 2026-09-09)
-
-- [log](log.md) — Append-only journal: [ingest 2026-09-06 Meeting 1](log.md#2026-09-06), [decision 2026-09-09 Product Context](log.md#2026-09-09), [ingest 2026-09-09 Meeting 2](log.md#2026-09-09-ingest)
-
----
-
-**Notes**
-
-- `wiki/problems/` — 11 pages, all `status: emerging`, `mentions: 2`, `status: confirmed` requires ≥3 independent sources or ≥2 source types (AGENTS.md L83–L84)
-- `wiki/decisions/` — 3 pages created, all `status: active` (PM approval pending)
-- `wiki/assumptions/` — 9 entries created (A1–A6 from source 1, A7–A9 new from source 2), all `status: untested` (PM approval pending)
-- `wiki/open-questions.md` — 24 questions tagged by resolution path
-- `wiki/overview.md` — Living synthesis, updated on every write
-- `wiki/stakeholders/` — Directory created for Stage 2 stakeholders (pending content)
-- `log.md` — Append-only, grep-able prefix `## [YYYY-MM-DD] ingest|query|lint|decision | <title>`
+## Decisions (all active, 2025-06-04)
+- [V1 scope: evidence-led research assistant](wiki/decisions/2025-06-04_v1-scope-evidence-led-research.md) - find/connect/explain evidence; extensions deferred
+- [Temporal awareness in V1](wiki/decisions/2025-06-04_temporal-awareness-v1.md) - version/status awareness foundational; change analysis deferred
+- [V1 balanced scorecard](wiki/decisions/2025-06-04_v1-balanced-scorecard.md) - productivity/quality/safety/adoption with manual baseline
+- [Bounded curated corpus](wiki/decisions/2025-06-04_bounded-curated-corpus.md) - include/exclude criteria; Content Owner + Technology governance
+- [Date-based current/future mode](wiki/decisions/2025-06-04_date-based-temporal-mode.md) - as-of dates; publication date is not applicability
+- [Minimum provenance standard](wiki/decisions/2025-06-04_minimum-provenance-standard.md) - source + status + precise location; no fabrication
+- [Status/authority labelling in UX](wiki/decisions/2025-06-04_status-authority-labelling-ux.md) - evidence-led language; visible status labels
