@@ -2,8 +2,8 @@
 type: problem
 status: emerging
 severity: medium
-mentions: 2
-updated: 2025-06-04
+mentions: 4
+updated: 2025-06-18
 cluster: evidence-workflow
 ---
 
@@ -30,3 +30,7 @@ None recorded.
 
 ### From email digest (2025-06-04)
 - The minimum provenance standard explicitly extends to structured material: provenance "may need to identify the specific table, row/field, instruction or template reference" (source: 2025_06_04_digest_clarifications.md, row 4)
+
+### From interviews (2025-06-17/18)
+- Analyst 1: for reporting requirements the useful reference may be "a particular table, reporting instruction, field or template reference" — document titles insufficient for material conclusions (source: 2025_06_17_interview_analyst1exp.md, L65)
+- Analyst 2: reporting questions may require identifying the specific template, table, row/field, reporting instruction or instructional paragraph (source: 2025_06_18_interview_analyst2prov.md, L63-71); evaluation must test whether the system "correctly handles tables and reporting instructions" (L143)

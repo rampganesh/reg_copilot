@@ -2,8 +2,8 @@
 type: problem
 status: confirmed
 severity: high
-mentions: 3
-updated: 2025-06-04
+mentions: 5
+updated: 2025-06-18
 cluster: evidence-workflow
 ---
 
@@ -29,6 +29,14 @@ All analysts relying on system output in a high-confidence research workflow; Co
 - Provenance must allow an analyst to independently verify the claim quickly; document-level references alone are insufficient for important answers (source: 2025_06_04_digest_clarifications.md, row 4)
 - "The system must not fabricate quotations or references" — restated as a hard requirement (source: 2025_06_04_digest_clarifications.md, row 4)
 - Evaluation should test citation correctness and completeness (source: 2025_06_04_digest_clarifications.md, row 4)
+
+### From interviews (2025-06-17/18)
+- Rejected research patterns: broad document-only citations, interpretations without underlying regulatory wording, unclear status/date, confident conclusions despite diverging sources — Analyst 1 (source: 2025_06_17_interview_analyst1exp.md, L46-53); "a citation is useful only if it reduces the effort required to verify the answer" (L57)
+- Analyst 2's rejection list adds: screenshots without context, "PRA guidance" without precise location, secondary explanations when primary material was available, non-reproducible citations, statements inconsistent with the cited document's status/effective date (source: 2025_06_18_interview_analyst2prov.md, L50-57)
+- Fastest path to trust: "click or navigate directly to the exact supporting provision and verify that the source actually said what the answer claimed" (source: 2025_06_18_interview_analyst2prov.md, L59)
+- Granularity is situational: section/paragraph suffices for textual requirements; reporting questions need template/table/row/field/instruction references (source: 2025_06_18_interview_analyst2prov.md, L63-71; source: 2025_06_17_interview_analyst1exp.md, L65)
+- "The tool would lose trust quickly if it produced a confident answer with an impressive-looking but incorrect citation" — Analyst 1 (source: 2025_06_17_interview_analyst1exp.md, L143)
+- "Provenance part of the answer itself, rather than supporting material added later" — Analyst 2 (source: 2025_06_18_interview_analyst2prov.md, L75)
 
 ## Contradicting evidence
 None recorded.

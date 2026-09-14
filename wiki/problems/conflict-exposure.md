@@ -2,8 +2,8 @@
 type: problem
 status: confirmed
 severity: high
-mentions: 2
-updated: 2025-06-04
+mentions: 4
+updated: 2025-06-18
 cluster: evidence-workflow
 ---
 
@@ -24,6 +24,10 @@ All analysts; raised by the Compliance representative and the Prudential Regulat
 
 ### From email digest (2025-06-04) — status: confirmed (2 source types: meeting + digest)
 - "The assistant should never silently resolve conflicting sources or present a proposal as a requirement. Ambiguous/conflicting evidence should trigger an explicit warning or escalation path." (source: 2025_06_04_digest_clarifications.md, row 7)
+
+### From interviews (2025-06-17/18)
+- Analyst 1 rejects research that "presented a confident conclusion even though related sources appeared to point in different directions" (source: 2025_06_17_interview_analyst1exp.md, L53); escalation accepted when the analyst can state what is uncertain and what needs resolving; distinguishes "I don't know" from "these are the relevant sources, but this point requires SME confirmation" (L78-82)
+- Analyst 2: where material was ambiguous or did not lead to a clear conclusion, documented the evidence and escalated rather than picking the most plausible interpretation; escalation works when the question is well-bounded with evidence assembled (source: 2025_06_18_interview_analyst2prov.md, L81-87)
 
 ## Contradicting evidence
 None recorded.

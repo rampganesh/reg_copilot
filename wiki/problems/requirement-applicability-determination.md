@@ -2,8 +2,8 @@
 type: problem
 status: confirmed
 severity: high
-mentions: 2
-updated: 2025-06-04
+mentions: 4
+updated: 2025-06-18
 cluster: evidence-workflow
 ---
 
@@ -25,6 +25,11 @@ All analysts answering applicability questions ("does this apply to us?"); the P
 ### From email digest (2025-06-04) — status: confirmed (2 source types: meeting + digest)
 - Autonomous applicability determination explicitly listed as an attractive extension, not a V1 capability (source: 2025_06_04_digest_clarifications.md, row 1)
 - V1 remains evidence-led rather than an autonomous compliance decision-maker (source: 2025_06_04_digest_clarifications.md, row 1)
+
+### From interviews (2025-06-17/18)
+- Analyst 1 would not hand to a tool: applicability where judgement is required, definitive compliance interpretation without review, silent resolution of conflicts, decisions with missing context, final answers acted on without evidence-checking (source: 2025_06_17_interview_analyst1exp.md, L117-123)
+- Analyst 2's non-delegable list: uncertain applicability, conflicting sources, ambiguity, missing contextual facts, significant regulatory consequences (source: 2025_06_18_interview_analyst2prov.md, L118-124)
+- Both comfortable delegating search, discovery, cross-referencing, evidence assembly and initial interpretation with visible evidence (source: 2025_06_17_interview_analyst1exp.md, L125; source: 2025_06_18_interview_analyst2prov.md, L126)
 
 ## Contradicting evidence
 None recorded.

@@ -1,9 +1,9 @@
 ---
 type: problem
-status: emerging
-severity: medium
-mentions: 3
-updated: 2025-06-04
+status: confirmed
+severity: high
+mentions: 6
+updated: 2025-06-18
 ---
 
 # No feedback loop on prior answers
@@ -29,6 +29,16 @@ All analysts; consequences (incorrect interpretations circulating) affect the wh
 
 ### From email digest (2025-06-04)
 - Safe behaviour is a scorecard dimension: appropriate refusal/escalation and unsupported-answer rate are explicit V1 measures (source: 2025_06_04_digest_clarifications.md, row 3); clear indication of uncertainty/insufficient evidence is a core V1 capability (source: 2025_06_04_digest_clarifications.md, row 1)
+
+### From Meeting 3 (2025-06-14) — staleness feedback loop
+- Previously generated answers are not silently treated as current if their underlying source changed; affected answers must be identifiable as potentially stale and linked to the updated source/version (source: 2025_06_14_meeting_latedocuments.md, L8, L11)
+- Prior answers preserved for audit/research with original source and temporal context; never automatically rewritten (source: 2025_06_14_meeting_latedocuments.md, L9)
+- Explicit process: detection → SME validation → publication/update → identification of potentially affected prior answers (source: 2025_06_14_meeting_latedocuments.md, L12); filed as decision 2025-06-14_corpus-update-and-staleness-policy.md; residual gap = Q10 (staleness window; proactive re-review vs. flag-on-use)
+
+### From interviews (2025-06-17/18) — impact tracing dimension
+- On discovering a stale answer, the concerns go beyond correcting it: who received the original interpretation, whether anyone acted on it, what the replacement requirement is, and whether related questions were answered with the same interpretation — Analyst 1 (source: 2025_06_17_interview_analyst1exp.md, L88-93)
+- Two separate concerns: correcting the original answer AND whether the outdated interpretation influenced other work; original temporal context must be preserved for later investigation — Analyst 2 (source: 2025_06_18_interview_analyst2prov.md, L91-96)
+- Answers should be preserved with source and date "rather than treating answers as timeless pieces of knowledge" (source: 2025_06_17_interview_analyst1exp.md, L95)
 
 ## Contradicting evidence
 None recorded.

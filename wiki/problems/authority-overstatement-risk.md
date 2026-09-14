@@ -1,9 +1,9 @@
 ---
 type: problem
-status: emerging
+status: confirmed
 severity: high
-mentions: 3
-updated: 2025-06-04
+mentions: 4
+updated: 2025-06-10
 cluster: evidence-workflow
 ---
 
@@ -27,6 +27,10 @@ All analysts and downstream readers of analyst answers; Compliance and the Prude
 - Evidence-led, cautious language confirmed as preferred formulation set: "Relevant sources indicate…", "The cited PRA material states…", "The following sources appear relevant…"; "The applicable requirement is…" reserved for validated/approved applicability (source: 2025_06_04_digest_clarifications.md, row 7)
 - Status/type labelling (final/operative, future effective, superseded/historical, proposed/consultation, explanatory/supporting) to be built into core UX, not hidden metadata (source: 2025_06_04_digest_clarifications.md, row 7)
 - Using internal historical answers as an authoritative knowledge source explicitly deferred out of V1 (source: 2025_06_04_digest_clarifications.md, row 1)
+
+### From desk research (2025-06-10) — status: confirmed (3 sources, 3 source types: meeting + digest + research)
+- The risk is now factually demonstrated in the live corpus: consultation CP16/22 (2022), near-final PS17/23 and PS9/24, final rules PS1/26 (Jan 2026) and post-final consultation CP9/26 (June 2026) all coexist; presenting any of these without status labelling would overstate or misstate authority (source: 2025_06_10_research_docversions.md, L6-9)
+- Post-final consultations (CP9/26) introduce "operational simplifications and targeted adjustments" — a document published *after* the final rules that is not an operative requirement (source: 2025_06_10_research_docversions.md, L9)
 
 ## Contradicting evidence
 None recorded.

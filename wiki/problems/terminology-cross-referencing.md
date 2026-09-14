@@ -2,8 +2,8 @@
 type: problem
 status: emerging
 severity: medium
-mentions: 3
-updated: 2025-06-04
+mentions: 5
+updated: 2025-06-18
 cluster: evidence-workflow
 ---
 
@@ -30,6 +30,10 @@ All analysts; notably visible in template/reporting-field questions where templa
 
 ### From email digest (2025-06-04)
 - Natural-language querying confirmed as a core V1 capability, alongside discovery of related/cross-referenced material (source: 2025_06_04_digest_clarifications.md, row 1)
+
+### From interviews (2025-06-17/18)
+- Analyst 1's walkthrough included following references from the initial document to related rules and reporting instructions, and checking whether the treatment was described more specifically elsewhere (source: 2025_06_17_interview_analyst1exp.md, L17-18)
+- Analyst 2 followed cross-references and checked reporting instructions/templates where appropriate (source: 2025_06_18_interview_analyst2prov.md, L21)
 
 ## Contradicting evidence
 None recorded.

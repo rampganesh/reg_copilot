@@ -1,9 +1,9 @@
 ---
 type: problem
-status: emerging
+status: confirmed
 severity: high
-mentions: 3
-updated: 2025-06-04
+mentions: 5
+updated: 2025-06-18
 cluster: evidence-workflow
 ---
 
@@ -34,6 +34,11 @@ All analysts on the UK capital regulatory reporting team; felt most acutely when
 ### From email digest (2025-06-04)
 - Success metric for the product centres on this problem: "reduction in time required to produce a verified, evidence-backed answer without reducing evidence quality or increasing unsafe answers" (source: 2025_06_04_digest_clarifications.md, row 3); a manual-process baseline should be established first
 - V1 focus confirmed as finding, connecting, and explaining authoritative evidence — the evidence-assembly workflow is the core, not an extension (source: 2025_06_04_digest_clarifications.md, row 1)
+
+### From interviews (2025-06-17/18) — behavioural confirmation
+- Analyst 1's end-to-end walkthrough: "the largest amount of effort was **not necessarily finding the first relevant document**. More time was spent confirming that it was the correct version and source, following cross-references, and assembling defensible evidence" (source: 2025_06_17_interview_analyst1exp.md, L24)
+- Analyst 2: "assembling and validating provenance was one of the most time-consuming parts", particularly with multiple contributing documents (source: 2025_06_18_interview_analyst2prov.md, L25)
+- Both define tool success as faster research while preserving the analyst's ability to verify (source: 2025_06_17_interview_analyst1exp.md, L145; source: 2025_06_18_interview_analyst2prov.md, L145)
 
 ## Contradicting evidence
 None recorded.

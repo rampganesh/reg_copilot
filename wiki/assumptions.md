@@ -1,20 +1,22 @@
 # Assumption register
 
 ## A1: Adoption depends on the tool saving analysts real time on search and evidence assembly, not on producing generic summaries
-- status: untested
+- status: validated (correlational)
 - evidence for: "If the system produces generic summaries that still require the analyst to perform the original research, the team is unlikely to use it regularly." — Regulatory Reporting Manager (source: 2025_05_24_meeting_kickoff.md, L75); experienced analysts' benefit is "reducing repetitive searching and evidence collection rather than eliminating expert judgement" — Analyst 1 (source: 2025_05_24_meeting_kickoff.md, L77)
 - evidence against: none yet
 - history: registered 2025-05-24 as untested (per: 2025_05_24_meeting_kickoff.md)
 - evidence added 2025-05-26 (status unchanged): "A successful assistant should make an analyst's research process faster without making the analyst less critical of the result" — Prudential Regulatory SME (source: 2025_05_26_meeting_followup.md, L155)
 - evidence added 2025-06-04 (status unchanged): V1 scorecard names productivity (time to a supported answer) alongside quality and safety dimensions — adoption and repeat usage are explicit measures (source: 2025_06_04_digest_clarifications.md, row 3)
+- history: 2025-06-18 untested → validated (correlational) (per: 2025_06_17_interview_analyst1exp.md, L24, L141-145; 2025_06_18_interview_analyst2prov.md, L25, L145 — behavioural confirmation from both analysts that effort concentrates in validation/assembly and tool success = time saved without losing verifiability; correlational: self-reported behaviour, no measured adoption)
 
 ## A2: Precise, inspectable provenance is a precondition for trust and adoption
-- status: untested
+- status: validated (correlational)
 - evidence for: Analyst 2 "would be uncomfortable using an AI-generated answer if they could not immediately inspect the supporting source" (source: 2025_05_24_meeting_kickoff.md, L45); a link to a 300-page document is not sufficient precision — Regulatory Reporting Manager (source: 2025_05_24_meeting_kickoff.md, L47); accuracy and trust rank above speed for regulatory work — Analyst 2 (source: 2025_05_24_meeting_kickoff.md, L69)
 - evidence against: none yet
 - history: registered 2025-05-24 as untested (per: 2025_05_24_meeting_kickoff.md)
 - evidence added 2025-05-26 (status unchanged): citations must allow independent verification — document, section/paragraph, context (source: 2025_05_26_meeting_followup.md, L49-51); "users should not have to interpret a model's confidence score to understand whether an answer is trustworthy" — trust comes from transparent evidence, source status, dates and escalation (source: 2025_05_26_meeting_followup.md, L107); pilot trust test = realistic historical questions answered with correct sources and expert-verifiable citations (source: 2025_05_26_meeting_followup.md, L133)
 - evidence added 2025-06-04 (status unchanged): minimum provenance standard adopted (source + version/status + precise location incl. table/row/field/instruction/template references); citation correctness and completeness to be tested in evaluation (source: 2025_06_04_digest_clarifications.md, row 4). NOTE: A2 now has consistent multi-stakeholder support across 3 sources; candidate for validated (correlational) at next review — PM approval required.
+- history: 2025-06-18 untested → validated (correlational) (per: PM approval; 2025_06_17_interview_analyst1exp.md, L46-57 — rejects research citing broad documents without sections, citation useful only if it reduces verification effort; 2025_06_18_interview_analyst2prov.md, L48-59 — sets aside non-traceable research, fastest trust = navigate directly to the exact provision; L75 — provenance is part of the answer itself; correlational: self-reported behaviour, no measured adoption)
 
 ## A3: Escalation/uncertainty signalling ("I couldn't find sufficient evidence") increases trust rather than reducing perceived usefulness
 - status: untested
@@ -23,3 +25,5 @@
 - history: registered 2025-05-24 as untested (per: 2025_05_24_meeting_kickoff.md)
 - evidence added 2025-05-26 (status unchanged): "I don't have sufficient evidence to answer this" is an acceptable system outcome — Compliance representative (source: 2025_05_26_meeting_followup.md, L77); for ambiguous interpretation the right behaviour may be to surface evidence and identify the ambiguity, not pick an answer (source: 2025_05_26_meeting_followup.md, L143)
 - evidence added 2025-06-04 (status unchanged): clear indication of uncertainty/insufficient evidence confirmed as a core V1 capability (source: 2025_06_04_digest_clarifications.md, row 1); "appropriate refusal/escalation" and "unsupported-answer rate" named as scorecard measures (source: 2025_06_04_digest_clarifications.md, row 3); insufficient evidence triggers explicit statement + warning/escalation path (source: 2025_06_04_digest_clarifications.md, row 7)
+- evidence added 2025-06-14 (status unchanged): staleness flagging extends the same principle over time — answers relying on superseded/amended material are flagged rather than silently returned as current (source: 2025_06_14_meeting_latedocuments.md, L8, L11)
+- evidence added 2025-06-18 (status unchanged): both analysts describe real escalations accepted when well-bounded — Analyst 1 distinguishes "I don't know" from "these are the relevant sources, but this point requires SME confirmation" (source: 2025_06_17_interview_analyst1exp.md, L78-82); Analyst 2 documents evidence and escalates rather than picking the most plausible interpretation, and notes provenance-backed escalation lets the SME focus on the judgement (source: 2025_06_18_interview_analyst2prov.md, L83-87). Stays untested: the trust-perception element (does refusal increase trust in the tool?) still has no behavioural test.

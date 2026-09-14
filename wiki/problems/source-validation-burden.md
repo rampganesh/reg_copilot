@@ -2,8 +2,8 @@
 type: problem
 status: confirmed
 severity: high
-mentions: 3
-updated: 2025-06-04
+mentions: 7
+updated: 2025-06-18
 cluster: evidence-workflow
 ---
 
@@ -37,6 +37,21 @@ All analysts; particularly acute during the Basel 3.1 transition where documents
 - "Current" must mean applicable as of a specified/reference date; publication date must not be treated as equivalent to applicability; avoid ambiguous labels such as "latest"; the temporal basis should be visible in both search and answers (source: 2025_06_04_digest_clarifications.md, row 6)
 - Corpus will be bounded and curated with explicit include/exclude criteria; material that could be mistaken for operative requirements when only explanatory/proposed is excluded (source: 2025_06_04_digest_clarifications.md, row 5)
 - Status labels required: final/operative, future effective, superseded/historical, proposed/consultation, explanatory/supporting (source: 2025_06_04_digest_clarifications.md, row 7)
+
+### From desk research (2025-06-10) — the overlap is concrete
+- Live Basel 3.1 publication timeline with five overlapping states: CP16/22 consultation (Nov 2022, RWA/credit/market risk/output floor), near-final PS17/23 (Dec 2023, market/operational risk/CVA) and PS9/24 (Sep 2024, credit risk/output floor), final rules PS1/26 (Jan 2026), and post-final consultation CP9/26 (June 2026, IMA market-risk adjustments) (source: 2025_06_10_research_docversions.md, L6-9)
+- A post-final consultation (CP9/26, June 2026) arrives after the final rules (PS1/26, Jan 2026) — so "newest document" sits alongside "final rules" and both differ in status; consultation language can look near-identical to requirements (source: 2025_06_10_research_docversions.md, L8-9)
+- The PRA also publishes "what changed" comparison documents alongside subsequent publications (source: 2025_06_10_research_docversions.md, L10) — relevant to manual current/future comparison in V1 (see decision 2025-06-04_temporal-awareness-v1)
+
+### From Meeting 3 (2025-06-14) — operational handling agreed
+- Amendment validation gate: new amendments reviewed for source authority, regulatory status, effective date and relationship to existing material before entering the active corpus (source: 2025_06_14_meeting_latedocuments.md, L7)
+- Staleness determined by source status and effective/applicability dates rather than publication date (source: 2025_06_14_meeting_latedocuments.md, L10); user-facing flagging when a response relies on superseded/amended material (L11)
+- Detection by the technical pipeline does not establish relevance or authority — Content Owner confirmation required (source: 2025_06_14_meeting_latedocuments.md, L6); filed as decision 2025-06-14_corpus-update-and-staleness-policy.md
+
+### From interviews (2025-06-17/18) — source validation is normal work, not an exception
+- "Source validation is a normal part of the work, not an exceptional check" — Analyst 1 (source: 2025_06_17_interview_analyst1exp.md, L40); first result treated as a starting point, checked for document type, final/proposed/historical status, effective date, more-specific instructions, and reference chains (L28-38)
+- Analyst 2's six-question validation checklist: authoritative? correct version? operative/future/proposed/historical? actually answers the question? more specific instruction? linked provisions changing interpretation? (source: 2025_06_18_interview_analyst2prov.md, L31-39)
+- "Search relevance and regulatory correctness are two different things" — Analyst 2 (source: 2025_06_18_interview_analyst2prov.md, L42)
 
 ## Contradicting evidence
 None recorded.

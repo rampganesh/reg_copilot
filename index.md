@@ -1,6 +1,6 @@
-﻿# Index
+# Index
 
-Last updated: 2025-06-04
+Last updated: 2025-06-18
 
 ## Overview
 - [Overview - product state synthesis](wiki/overview.md) - living synthesis; current after 2025-06-04 digest ingest (updated 2025-06-04)
@@ -27,10 +27,14 @@ Last updated: 2025-06-04
 ## Sources
 - [Meeting 1 - Business & User Discovery Notes](sources/2025_05_24_meeting_kickoff.md) - kickoff meeting notes (ingested 2025-05-24)
 - [Meeting 2 - Regulatory/Prudential SME Discovery Notes](sources/2025_05_26_meeting_followup.md) - SME discovery notes (ingested 2025-05-26)
-- [Email answers to open questions \(digest\)](sources/2025_06_04_digest_clarifications.md) - consolidated stakeholder answers; ingested 2025-06-04
+- [Email answers to open questions (digest)](sources/2025_06_04_digest_clarifications.md) - consolidated stakeholder answers; ingested 2025-06-04
+- [Desk research - Document versions PRA Basel 3.1](sources/2025_06_10_research_docversions.md) - publication timeline CP16/22 to PS1/26 to CP9/26; ingested 2025-06-10
+- [Interview - Analyst 1 (experienced)](sources/2025_06_17_interview_analyst1exp.md) - discovery interview, behavioural evidence; ingested 2025-06-18
+- [Interview - Analyst 2 (provenance-focused)](sources/2025_06_18_interview_analyst2prov.md) - discovery interview, behavioural evidence; ingested 2025-06-18
 
 
 ## Decisions (all active, 2025-06-04)
+- [Corpus update process and staleness policy](wiki/decisions/2025-06-14_corpus-update-and-staleness-policy.md) - Content Owner confirms amendments; stale answers flagged; no refresh SLA (2025-06-14)
 - [V1 scope: evidence-led research assistant](wiki/decisions/2025-06-04_v1-scope-evidence-led-research.md) - find/connect/explain evidence; extensions deferred
 - [Temporal awareness in V1](wiki/decisions/2025-06-04_temporal-awareness-v1.md) - version/status awareness foundational; change analysis deferred
 - [V1 balanced scorecard](wiki/decisions/2025-06-04_v1-balanced-scorecard.md) - productivity/quality/safety/adoption with manual baseline
@@ -38,3 +42,17 @@ Last updated: 2025-06-04
 - [Date-based current/future mode](wiki/decisions/2025-06-04_date-based-temporal-mode.md) - as-of dates; publication date is not applicability
 - [Minimum provenance standard](wiki/decisions/2025-06-04_minimum-provenance-standard.md) - source + status + precise location; no fabrication
 - [Status/authority labelling in UX](wiki/decisions/2025-06-04_status-authority-labelling-ux.md) - evidence-led language; visible status labels
+
+## Personas (Stage 2, activated 2025-06-18)
+- [Experienced analyst](wiki/personas/experienced-analyst.md) - jumps to likely sources; provenance-as-answer; value = speed without losing verifiability (updated 2025-06-18)
+- [Newer analyst](wiki/personas/newer-analyst.md) - learns the research path; needs why-trust; second-hand evidence, direct interview pending (updated 2025-06-18)
+
+## Stakeholders (Stage 2, active 2026-09-09)
+- [Regulatory Reporting Manager](wiki/stakeholders/regulatory-reporting-manager.md) - initiative owner; core problem framing; guardrails; narrow scope (updated 2026-09-14)
+- [Analyst 1 (experienced)](wiki/stakeholders/analyst-1.md) - validation is the hard part; normal-language queries; value = less repetitive searching (updated 2025-06-18)
+- [Analyst 2](wiki/stakeholders/analyst-2.md) - provenance and accuracy over speed; honest uncertainty; drill-down help (updated 2025-06-18)
+- [Regulatory Change/Reporting SME](wiki/stakeholders/regulatory-change-reporting-sme.md) - finding vs. interpreting; effective dates critical; corpus not static (updated 2026-09-14)
+- [Prudential Regulatory SME](wiki/stakeholders/prudential-regulatory-sme.md) - relational authority; no auto-applicability; expose conflicts; no confidence scores (updated 2026-09-14)
+- [Compliance representative](wiki/stakeholders/compliance-representative.md) - no fabricated citations; no confidence scores; expose conflicts; interface language (updated 2026-09-14)
+- [Data/Reporting SME](wiki/stakeholders/data-reporting-sme.md) - template/instruction versioning alongside regulatory material; under-evidenced role (updated 2026-09-14)
+

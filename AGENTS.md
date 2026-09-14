@@ -170,7 +170,8 @@ PM and propose the upgrade; on approval, update this schema file and log the cha
   of their own, linked to the problems they address; then prioritization queries score bets).
 - `wiki/competitors/` — when competitor intel is ingested for the 2nd time.
 - `wiki/metrics/` — when the same metric is cited by ≥2 decisions or its definition is disputed.
-- `wiki/stakeholders/` — **active 2026-09-09**: 7 roles identified (Regulatory Reporting Manager, Analyst 1, Analyst 2, Regulatory Change/Reporting SME, Prudential Regulatory SME, Compliance representative, Data/Reporting SME); Compliance independently shaping constraints (L13, 29, 39, 55, 67, 77, 83, 93, 105, 119, 129, 139, 151, 157).
+- `wiki/stakeholders/` — when stakeholder positions start driving decisions (usually team ≥ ~5
+  or first serious cross-functional conflict).
 
 **Stage 3 — add tooling when triggered**:
 - Local search (e.g. qmd) — when `index.md` exceeds ~150 pages or you notice retrieval misses.

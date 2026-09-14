@@ -47,3 +47,9 @@ Answered and filed to decisions: Q1, Q2, Q4, Q5, Q6, Q7, Q9. Still open: Q3 (cor
 
 ## New governance roles surfaced
 Regulatory/Prudential SME or Regulatory Content Owner (content governance); Technology (ingestion/indexing) - source: 2025_06_04_digest_clarifications.md, row 5.
+
+## Update 2025-06-18 - analyst interviews and personas
+- Both analyst interviews behaviourally confirmed the core problems (walkthrough evidence); no-feedback-loop CONFIRMED and severity raised to high (impact-tracing dimension); source-validation-burden at 7 mentions.
+- A1 and A2 now validated (correlational) - behavioural confirmation, no measured adoption yet. A3 remains untested.
+- PERSONAS ACTIVATED: wiki/personas/ - experienced-analyst (evidence-chained) and newer-analyst (second-hand evidence only; direct interview pending). Divergence: experienced = jump-to-sources, provenance-as-answer, speed without losing verifiability; newer = learn the research path, why-trust, colleague dependence.
+- Q8/Q10 enriched: analyst difficult-case lists converge with the SME specification; staleness now includes impact tracing (who received/acted on a stale answer). Both open.

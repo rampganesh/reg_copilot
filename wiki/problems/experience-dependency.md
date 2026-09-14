@@ -2,8 +2,8 @@
 type: problem
 status: emerging
 severity: high
-mentions: 3
-updated: 2025-06-04
+mentions: 5
+updated: 2025-06-18
 ---
 
 # Experience dependency and knowledge fragmentation
@@ -32,6 +32,12 @@ Whole team; biggest cost borne by newer analysts and by anyone covering for an u
 
 ### From email digest (2025-06-04)
 - Use of internal historical answers as an authoritative knowledge source explicitly listed as an attractive extension, not V1 (source: 2025_06_04_digest_clarifications.md, row 1)
+
+### From interviews (2025-06-17/18) — divergence behaviourally confirmed
+- Both analysts teach newer colleagues the research path (where to start, which sources are authoritative, how to spot superseded material, how to validate evidence) rather than giving answers (source: 2025_06_17_interview_analyst1exp.md, L101-109; source: 2025_06_18_interview_analyst2prov.md, L104-110)
+- "This is different from how they personally work. Experience means they can often jump directly to likely sources or recognise relevant terminology without consciously following every step" — Analyst 1 (source: 2025_06_17_interview_analyst1exp.md, L111)
+- "Newer colleagues often need help understanding **why one source should be trusted over another**, whereas an experienced analyst may recognise this from experience" — Analyst 2 (source: 2025_06_18_interview_analyst2prov.md, L112)
+- As newer analysts, both relied heavily on colleagues, previous examples and knowing which documents contained what (source: 2025_06_17_interview_analyst1exp.md, L113; source: 2025_06_18_interview_analyst2prov.md, L114) → personas trigger fired, see wiki/personas/
 
 ## Contradicting evidence
 None recorded.
