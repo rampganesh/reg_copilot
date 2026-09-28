@@ -32,3 +32,12 @@
 - Third source type (research): PRA Basel 3.1 publication timeline - CP16/22 (Nov 2022), PS17/23 (Dec 2023), PS9/24 (Sep 2024), final rules PS1/26 (Jan 2026), post-final CP9/26 (Jun 2026); PRA also publishes what-changed comparison documents.
 - source-validation-burden extended (mentions 4); authority-overstatement-risk CONFIRMED (3 sources, 3 source types, PM pre-approved plan) - the consultation/final/post-final overlap is now factually demonstrated.
 - Q3 stays open with new evidence (corpus cannot be static post-implementation); Q2 answered entry noted: PRA-published what-changed documents support V1 manual comparison - temporal-awareness decision reversal conditions NOT triggered.
+
+## [2026-09-24] query | RegCopilot V1 clickable prototype built
+- Built artefacts/regcopilot-prototype.html — single-file desktop-web prototype of the full V1 flow: ask (title, instructions, NL input, as-of control) → results (evidence-led answer, scrollable citations with 5 status badges + effective dates, expandable context views, template/row/field refs with linked definitions, side-by-side conflict state, SME escalation modal).
+- No Figma MCP connected in session; HTML prototype serves as the clickable artefact and a 1:1 build reference for the Figma file (RegCopilot, uHGwAOpULIJlMnGQY43So5).
+- Mock sources use the real PRA Basel 3.1 timeline: CP16/22, PS17/23, PS9/24, PS1/26, CP9/26 + explanatory overview; 5 scenarios cover multi-status citations, conflict/side-by-side, template row/field refs, as-of date shift, and escalation.
+
+## [2026-09-24] query | RAG integration spec for prototype written
+- artefacts/regcopilot-prototype-integration-spec.md: line-map of regcopilot-prototype.html marking REPLACE vs frozen sections; input contract ({question, asOfDate}); output contract (JSON mirroring mock structures, status-resolution table, prose vs template/row/field location formats); one-function integration point (ask()); all five scenarios as acceptance-spec I/O walkthroughs; change summary + integration test checklist.
+- Audience: dev team building RAG lookup; scenario inputs/outputs fully covered.
